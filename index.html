@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+<h1>CCO-118500 Muhammad Abdul Mustafa Qadri</h1>
+<h1>Q1</h1>
+
+
+
+
+    <script>
+        // Declare an empty array to store student names in the future
+var studentNames = [ "Ahmad","Raza","Ali","Fahd"];
+// Add student names to the array
+studentNames.push("AliHamza");
+studentNames.push("rizwan");
+studentNames.push("hadaz");
+
+// Display the array
+console.log(studentNames);
+
+    </script>
+    <h1>Q2</h1>
+    <script>
+        // Declare an empty array using JS object notation to store student names in the future
+var studentObject = {
+    studentNames: ["Ahmad","Raza","Ali","Fahd"]
+};
+// Add student names to the array
+studentObject.studentNames.push("AliHamza");
+studentObject.studentNames.push("rizwan");
+studentObject.studentNames.push("hadaz");
+
+// Display the array
+console.log(studentObject.studentNames);
+
+    </script>
+    <h1>Q3</h1>
+    <script>
+        // Declare and initialize a strings array
+var fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"];
+
+// Display the array
+console.log(fruits);
+
+    </script>
+    <h1>
+        Q4
+    </h1>
+    <script>
+        // Declare and initialize a numbers array
+var numbers = [1, 2, 3, 4, 5, 10, 15, 20];
+
+// Display the array
+console.log(numbers);
+
+    </script>
+    <h1>
+        Q5
+    </h1>
+    <script>
+        // Declare and initialize a boolean array
+var booleanArray = [true, false, true, true, false];
+
+// Display the array
+console.log(booleanArray);
+
+    </script>
+    <h1>Q6</h1>
+    <script>
+        // Declare and initialize a mixed array
+var mixedArray = ["Ali", 25, true, "Ahmad", false, 10.5];
+
+// Display the array
+console.log(mixedArray);
+
+    </script>
+    <h1>Q7</h1>
+    <script>
+        // Declare and initialize an array with education qualifications
+var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+// Display the listed qualifications in the browser
+document.write("<h2>Educational Qualifications in Pakistan:</h2>");
+document.write("<ul>");
+
+for (var i = 0; i < qualifications.length; i++) {
+    document.write("<li>" + qualifications[i] + "</li>");
+}
+
+document.write("</ul>");
+
+    </script>
+    <h1>Q8</h1>
+    <script>
+        // Array to store student names
+var studentNames = ["John", "Alice", "Bob"];
+
+// Array to store scores of students
+var scores = [400, 450, 350];
+
+// Assuming total marks are 500 for each student
+var totalMarks = 500;
+
+// Display scores and percentages of students
+for (var i = 0; i < studentNames.length; i++) {
+    var studentName = studentNames[i];
+    var score = scores[i];
+    var percentage = (score / totalMarks) * 100;
+
+    console.log("Student: " + studentName);
+    console.log("Score: " + score + " out of " + totalMarks);
+    console.log("Percentage: " + percentage.toFixed(2) + "%");
+    console.log("--------------------");
+}
+
+    </script>
+    <h1>Q9</h1>
+    <script>
+        // Initialize an array with color names
+var colors = ["Red", "Green", "Blue"];
+
+// Display the original array in the browser
+document.write("<h2>Original Array:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Ask the user what color to add to the beginning and add it
+var colorToAddBeginning = prompt("Enter a color to add to the beginning:");
+colors.unshift(colorToAddBeginning);
+
+// Display the updated array after adding color to the beginning
+document.write("<h2>After Adding Color to the Beginning:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Ask the user what color to add to the end and add it
+var colorToAddEnd = prompt("Enter a color to add to the end:");
+colors.push(colorToAddEnd);
+
+// Display the updated array after adding color to the end
+document.write("<h2>After Adding Color to the End:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Add two more colors to the beginning of the array
+colors.unshift("Purple", "Yellow");
+
+// Display the updated array after adding two more colors to the beginning
+document.write("<h2>After Adding Two More Colors to the Beginning:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Delete the first color in the array
+colors.shift();
+
+// Display the updated array after deleting the first color
+document.write("<h2>After Deleting the First Color:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Delete the last color in the array
+colors.pop();
+
+// Display the updated array after deleting the last color
+document.write("<h2>After Deleting the Last Color:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Ask the user at which index to add a color and add it
+var indexToAdd = parseInt(prompt("Enter the index at which to add a color:"));
+var colorToAddAtIndex = prompt("Enter the color to add:");
+colors.splice(indexToAdd, 0, colorToAddAtIndex);
+
+// Display the updated array after adding color at the specified index
+document.write("<h2>After Adding Color at the Specified Index:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+// Ask the user at which index to delete color(s) and how many
+var indexToDelete = parseInt(prompt("Enter the index at which to delete color(s):"));
+var colorsToDelete = parseInt(prompt("Enter how many colors to delete:"));
+colors.splice(indexToDelete, colorsToDelete);
+
+// Display the updated array after deleting color(s) at the specified index
+document.write("<h2>After Deleting Color(s) at the Specified Index:</h2>");
+document.write("<p>" + colors.join(", ") + "</p>");
+
+    </script>
+    <h1>Q10</h1>
+    <script>
+        // Array to store student scores
+var studentScores = [85, 92, 78, 95, 89, 60, 72];
+
+// Display the original array
+console.log("Original Array: " + studentScores);
+
+// Sort the array in ascending order
+studentScores.sort(function(a, b) {
+    return a - b;
+});
+
+// Display the sorted array
+console.log("Sorted Array (Ascending Order): " + studentScores);
+
+    </script>
+    <h1>Q11</h1>
+    <script>
+        // Initialize an array with city names
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+// Create an empty array for selected cities
+var selectedCities = [];
+
+// Copy 3 elements from cities array to selectedCities array
+selectedCities = cities.slice(1, 4); // Copy elements at index 1, 2, and 3
+
+// Display the original and selected arrays
+console.log("Original Cities Array: " + cities);
+console.log("Selected Cities Array: " + selectedCities);
+
+    </script>
+    <h1>Q12</h1>
+    <script>
+        var arr = ["This", "is", "my", "cat"];
+
+// Use the join method to create a single string
+var resultString = arr.join(" ");
+
+// Display the result
+console.log(resultString);
+
+    </script>
+    <h1>Q13</h1>
+    <script>
+        class Queue {
+  constructor() {
+    this.items = [];
+  }
+
+  enqueue(item) {
+    this.items.push(item);
+  }
+
+  dequeue() {
+    if (!this.isEmpty()) {
+      return this.items.shift();
+    } else {
+      console.log("Queue is empty");
+    }
+  }
+
+  isEmpty() {
+    return this.items.length === 0;
+  }
+
+  size() {
+    return this.items.length;
+  }
+}
+
+// Example usage:
+const myQueue = new Queue();
+
+// Enqueue values
+myQueue.enqueue(1);
+myQueue.enqueue(2);
+myQueue.enqueue(3);
+
+// Dequeue values
+console.log(myQueue.dequeue()); // Output: 1
+console.log(myQueue.dequeue()); // Output: 2
+
+// Check if the queue is empty
+console.log(myQueue.isEmpty()); // Output: false
+
+// Get the current size of the queue
+console.log(myQueue.size()); // Output: 1
+
+    </script>
+    <h1>Q14</h1>
+    <script>
+        class Stack {
+  constructor() {
+    this.items = [];
+  }
+
+  push(item) {
+    this.items.push(item);
+  }
+
+  pop() {
+    if (!this.isEmpty()) {
+      return this.items.pop();
+    } else {
+      console.log("Stack is empty");
+    }
+  }
+
+  isEmpty() {
+    return this.items.length === 0;
+  }
+
+  size() {
+    return this.items.length;
+  }
+}
+
+// Example usage:
+const myStack = new Stack();
+
+// Push values
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+
+// Pop values
+console.log(myStack.pop()); // Output: 3
+console.log(myStack.pop()); // Output: 2
+
+// Check if the stack is empty
+console.log(myStack.isEmpty()); // Output: false
+
+// Get the current size of the stack
+console.log(myStack.size()); // Output: 1
+
+    </script>
+    <h1>Q15</h1>
+    <script>
+         // Array of phone manufacturers
+  const phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+// Start building the HTML string for the dropdown
+let dropdownHTML = '<select id="manufacturerDropdown">';
+
+// Loop through the array to create option elements
+for (let i = 0; i < phoneManufacturers.length; i++) {
+  dropdownHTML += `<option value="${phoneManufacturers[i]}">${phoneManufacturers[i]}</option>`;
+}
+
+// Close the select tag
+dropdownHTML += '</select>';
+
+// Write the HTML string to the document
+document.write(dropdownHTML);
+    </script>
+</body>
+</html>
